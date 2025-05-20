@@ -81,17 +81,18 @@ Based on the analysis, significant differences were identified between casual ri
 
 ## 7. Visualizations
 
-Explore the interactive dashboards on Tableau Public and static images here:
+Explore the interactive dashboards on Tableau Public and static images here. Both dashboards are part of the same Tableau Public workbook.
 
 ### **Dashboard 1: Comparing Cyclistic Rider Usage**
 This dashboard provides an overview of ride volume distribution between annual members and casual riders.
 ![Total Rides by User Type](visuals/comparing_cyclistic_rider_usage.png)
-[View Live Dashboard on Tableau Public](https://public.tableau.com/app/profile/david.martinez6844/viz/CyclisticRiderAnalysis_17472629388140/Dashboard1)
 
 ### **Dashboard 2: Average Ride Duration Patterns by Day and User Type**
 This visualization illustrates the average ride duration patterns across different days of the week for both casual and annual users.
 ![Average Ride Duration by Day](visuals/cyclistic_avg_ride_duration_by_day.png)
-[View Live Dashboard on Tableau Public](YOUR_TABLEAU_PUBLIC_LINK_FOR_DASHBOARD_2_HERE)
+
+### **View Live Dashboards on Tableau Public**
+[Cyclistic Rider Analysis Dashboards](https://public.tableau.com/app/profile/david.martinez6844/viz/CyclisticRiderAnalysis_17472629388140/Dashboard1)
 
 ## 8. Recommendations for Conversion
 
