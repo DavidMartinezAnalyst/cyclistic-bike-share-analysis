@@ -24,17 +24,18 @@ The dataset used for this analysis is Cyclistic's historical bike trip data. Thi
 * **SQL (Google BigQuery):** For efficient data cleaning, transformation, and aggregation of large datasets.
 * **R:** For exploratory data analysis, statistical summaries, and further data manipulation.
 * **Tableau Public:** For creating interactive dashboards and compelling visualizations to present key findings.
+* **Power BI:** For building interactive dashboards and advanced business intelligence reports.
 * **PowerPoint:** For creating the final presentation deck.
 
 ## 5. Methodology & Key Steps
 
 The analysis followed a structured data analysis process, leveraging different tools for each stage:
 
-1.  **Data Collection & Loading:**
-    * Accessed raw trip data from Google Cloud Public Datasets (Divvy tripdata bucket).
-    * Utilized Google BigQuery for efficient loading and initial querying of the large datasets.
+* **1. Data Collection & Loading:**
+    * **Purpose:** Accessed raw trip data from Google Cloud Public Datasets (Divvy tripdata bucket).
+    * **Process:** Utilized Google BigQuery for efficient loading and initial querying of the large datasets.
 
-2.  **Data Cleaning & Transformation (SQL):**
+* **2. Data Cleaning & Transformation (SQL):**
     * **Purpose:** To prepare the raw, messy quarterly datasets into a clean, unified, and consistent format suitable for analysis.
     * **Process:**
         * Handled schema inconsistencies by renaming and casting messy column names (e.g., from Q2/Q4 2019) to match standardized naming conventions.
@@ -44,7 +45,7 @@ The analysis followed a structured data analysis process, leveraging different t
         * **Feature Engineering:** Derived critical new metrics such as `ride_length_min` (trip duration in minutes) and `day_of_week` from existing `start_time` and `end_time` timestamps, which were vital for understanding usage patterns.
     * *See `sql/data_cleaning_queries.sql` for the detailed SQL script.*
 
-3.  **Exploratory Data Analysis & Further Processing (R):**
+* **3. Exploratory Data Analysis & Further Processing (R):**
     * **Purpose:** To conduct in-depth statistical analysis, generate key metrics, and prepare aggregated data for visualization, building upon the SQL-cleaned dataset.
     * **Process:**
         * Loaded the cleaned and transformed data (likely exported from BigQuery as a CSV) into an R environment.
@@ -56,16 +57,16 @@ The analysis followed a structured data analysis process, leveraging different t
         * Exported aggregated summary data (e.g., `summary_stats.csv`, `rides_by_day.csv`) for potential use in other tools or for record-keeping.
     * *See `r_analysis/cyclistic_full_analysis.R` for the R analysis script.*
 
-4.  **Data Visualization (Tableau):**
+* **4. Data Visualization (Tableau & Power BI):**
     * **Purpose:** To create compelling and interactive dashboards that visually represent the key findings from the analysis, making complex data insights easily understandable.
-    * **Process:** Designed and built dashboards to compare user behavior patterns (e.g., ride volume, average duration, temporal trends) between casual riders and annual members.
-    * *See `visuals/` folder for dashboard screenshots and links to live Tableau Public dashboards below.*
+    * **Process:** Designed and built dashboards to compare user behavior patterns (e.g., ride volume, average duration, temporal trends) between casual riders and annual members using both Tableau and Power BI.
+    * *See `visuals/` folder for dashboard screenshots and links to live Tableau Public dashboards below. Power BI files and screenshots are in the `PowerBI_Dashboard/` folder.*
 
-5.  **Recommendation Development:**
+* **5. Recommendation Development:**
     * **Purpose:** To translate data-driven insights into actionable business strategies.
     * **Process:** Formulated specific marketing and retention recommendations aimed at converting casual riders into annual members, directly addressing the initial business task.
 
-6.  **Presentation:**
+* **6. Presentation:**
     * **Purpose:** To effectively communicate the entire analytical journey, key findings, and recommendations to stakeholders.
     * **Process:** Compiled a comprehensive presentation deck summarizing the methodology, insights, and proposed solutions.
     * *See `presentation/cyclistic_case_study_report.pdf` for the complete slide deck.*
@@ -93,6 +94,13 @@ This visualization illustrates the average ride duration patterns across differe
 
 ### **View Live Dashboards on Tableau Public**
 [Cyclistic Rider Analysis Dashboards](https://public.tableau.com/app/profile/david.martinez6844/viz/CyclisticRiderAnalysis_17472629388140/Dashboard1)
+
+### **Dashboard 3: Cyclistic Rider Analysis in Power BI**
+This dashboard presents key insights into rider behavior using Power BI, including total rides by user type and average ride duration patterns.
+![Cyclistic Power BI Dashboard](visuals/cyclistic_powerbi_dashboard.png)
+
+You can find the Power BI Desktop file (`.pbix`) here: [Cyclistic_Rider_Analysis_Dashboard.pbix](PowerBI_Dashboard/Cyclistic_Rider_Analysis_Dashboard.pbix)
+
 
 ## 8. Recommendations for Conversion
 
