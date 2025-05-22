@@ -123,4 +123,4 @@ Feel free to reach out with any questions or collaboration opportunities!
 
 * **Your Name:** David Martinez
 * **Email:** [demartinez722@gmail.com](mailto:demartinez722@gmail.com)
-* **LinkedIn:** [David Martinez](https://www.linkedin.com/in/david-espejel-martinez)
+* **LinkedIn:** [David Martinez](https://www.linkedin.com/in/davidmartinezanalyst)
